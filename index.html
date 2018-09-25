@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="Enter your name" />
+        <br />
+        <textarea id="customField" placeholder="Type your message here">Hey, my name is Luke! </textarea>
+        <!--<div class="fh-suggestions"></div>-->
+        <br />
+        <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form class="secondForm">
+        <input type="text" placeholder="Enter your name" />
+        <br />
+        <div class="fh-suggestions"></div>
+        <textarea id="customField" placeholder="Type your message here">Hey, my name is Luke! </textarea>
+        <br />
+        <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <form>
+        <input type="text" placeholder="Enter your name" />
+        <br />
+        <div class="fh-suggestions"></div>
+        <textarea id="thirdForm" placeholder="Type your message here">Hey, my name is Luke! </textarea>
+        <br />
+        <button>Submit</button>
+    </form>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/formhance.js"></script>
+    <script>
+        $('#customField').formhance({
+            theme: 'blue',
+            suggestion: {
+                title: [
+                    'Quote',
+                    'Packages',
+                    'General Enquiry',
+                    'Just a title'
+                ],
+                description: [
+                    'Hi, I was wondering if I could get a quote please?',
+                    'Do you have any packages I could see?',
+                    'Hello, I have a question regarding '
+                ]
+            }
+        });
+
+        $('.secondForm textarea').formhance({
+            theme: 'red',
+            suggestion: {
+                title: [
+                    'Hello',
+                    'World',
+                    'I\'m',
+                    'Luke'
+                ]
+            }
+        });
+
+        $('#thirdForm').formhance({
+            theme: 'red',
+            suggestions: [
+                {
+                    item: {
+                        title: 'aaaa',
+                        description: 'bbbb'
+                    }
+                },
+                {
+                    item: {
+                        title: 'ccc',
+                        description: 'ddd'
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

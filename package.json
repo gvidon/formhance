@@ -1,0 +1,17 @@
+{
+  "name": "formhance",
+  "version": "1.0.0",
+  "description": "Prepopulations for your website form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css",
+    "minify": "minify.js"
+  },
+  "author": "Luke Williamson",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3",
+    "npm": "^6.4.1"
+  }
+}
