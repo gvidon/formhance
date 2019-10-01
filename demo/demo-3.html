@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Demo 3</title>
+  <link rel="stylesheet" href="../dist/css/style.min.css" />
+</head>
+
+<body>
+
+  <hr />
+  <p><strong>Demo 3</strong></p>
+  <p>Selecting form by: id/class</p>
+  <p>Plugin example: Custom labels with custom descriptions in closed objects, custom placement of buttons</p>
+  <p><em>(WIP) - this may replace demo 2</em></p>
+  <hr />
+
+  <form>
+    <div class="fh-suggestions"></div>
+    <textarea id="thirdForm" placeholder="Type your message here"></textarea>
+    <br />
+    <button>Submit</button>
+    <input type="reset">
+  </form>
+
+  <script src="../dist/js/jquery-3.3.1.min.js"></script>
+  <script src="../dist/js/formhance.min.js"></script>
+  <script>
+    $('#thirdForm').formhance({
+      theme: 'red',
+      spaceAfter: true,
+      suggestions: [{
+          item: {
+            title: 'aaaa',
+            description: 'bbbb'
+          }
+        },
+        {
+          item: {
+            title: 'ccc',
+            description: 'ddd'
+          }
+        }
+      ]
+    });
+  </script>
+
+</body>
+
+</html>

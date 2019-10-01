@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Demo 2</title>
+  <link rel="stylesheet" href="../dist/css/style.min.css" />
+</head>
+
+<body>
+
+  <hr />
+  <p><strong>Demo 2</strong></p>
+  <p>Selecting form by: id/class</p>
+  <p>Plugin example: Custom labels with assigned custom descriptions, default placement of buttons</p>
+  <hr />
+
+  <form>
+    <textarea id="customField" placeholder="Type your message here"></textarea>
+    <br />
+    <button>Submit</button>
+    <input type="reset">
+  </form>
+
+  <script src="../dist/js/jquery-3.3.1.min.js"></script>
+  <script src="../dist/js/formhance.min.js"></script>
+  <script>
+    $('#customField').formhance({
+      theme: 'blue',
+      spaceAfter: true,
+      suggestion: {
+        title: [
+          'Quote',
+          'Packages',
+          'General Enquiry',
+          'Just a title'
+        ],
+        description: [
+          'Hi, I was wondering if I could get a quote please?',
+          'Do you have any packages I could see?',
+          'Hello, I have a question regarding '
+        ]
+      }
+    });
+  </script>
+
+</body>
+
+</html>

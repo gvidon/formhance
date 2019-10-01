@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Demo 1</title>
+  <link rel="stylesheet" href="../dist/css/style.min.css" />
+</head>
+
+<body>
+
+  <hr />
+  <p><strong>Demo 1</strong></p>
+  <p>Selecting form by: element inside class</p>
+  <p>Plugin example: Custom labels, custom placement of buttons</p>
+  <hr />
+
+  <form class="firstForm">
+    <div class="fh-suggestions"></div>
+    <textarea id="customField" placeholder="Type your message here"></textarea>
+    <br />
+    <button>Submit</button>
+    <input type="reset">
+  </form>
+
+  <script src="../dist/js/jquery-3.3.1.min.js"></script>
+  <script src="../dist/js/formhance.min.js"></script>
+  <script>
+    $('.firstForm textarea').formhance({
+      theme: 'red',
+      spaceAfter: true,
+      suggestion: {
+        title: [
+          'Hello',
+          'World',
+          'I\'m',
+          'Luke'
+        ]
+      }
+    });
+  </script>
+
+</body>
+
+</html>

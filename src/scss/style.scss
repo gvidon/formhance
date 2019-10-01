@@ -1,0 +1,51 @@
+textarea {
+    width: 400px;
+    height: 200px;
+}
+
+
+.ft {
+    &-red {
+        $themeColour: red;
+
+        .fh-prepop {
+            color: $themeColour;
+        }
+    }
+
+    &-blue {
+        $themeColour: blue;
+
+        .fh-prepop {
+            color: $themeColour;
+        }
+    }
+}
+
+.fh-suggestions {
+    clear: both;
+    margin: 20px 0;
+
+    .fh-prepop {
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid lightgray;
+        border-radius: 25px;
+        padding: 10px 20px;
+        margin: 0 5px;
+        text-decoration: none;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 4px 5px #0003;
+        }
+
+        &:before {
+            content: '+';
+            font-weight: bold;
+            font-size: 30px;
+            vertical-align: sub;
+            margin-right: 10px;
+        }
+    }
+}
